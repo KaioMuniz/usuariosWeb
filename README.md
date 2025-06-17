@@ -1,59 +1,65 @@
-# ProjetoWebAgenda2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+# Projeto: usuariosWeb
 
-## Development server
+Este é um projeto desenvolvido em Angular para a criação e gerenciamento de usuários na web.
 
-To start a local development server, run:
+## Descrição
+
+O **usuariosWeb** é uma aplicação web construída com Angular, que permite o gerenciamento de usuários. O sistema possibilita o cadastro, edição e remoção de usuários, entre outras funcionalidades que serão descritas abaixo.
+
+## Tecnologias Utilizadas
+
+- **Angular**: Framework para desenvolvimento de aplicações web.
+- **Node.js**: Ambiente de execução para o JavaScript no lado do servidor.
+- **TypeScript**: Linguagem usada no desenvolvimento da aplicação.
+- **HTML/CSS**: Linguagens de marcação e estilo para o front-end.
+- **JSON**: Para configuração de rotas e dados da aplicação.
+
+## Como Iniciar o Projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://seu-repositorio.git
+cd usuariosWeb-main
+```
+
+### 2. Instale as dependências
+
+No diretório do projeto, execute o comando abaixo para instalar as dependências necessárias:
+
+```bash
+npm install
+```
+
+### 3. Execute a aplicação
+
+Depois de instalar as dependências, inicie a aplicação com o seguinte comando:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Agora, você pode acessar a aplicação no navegador em `http://localhost:4200`.
 
-## Code scaffolding
+## Estrutura do Projeto
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+- **src/app**: Contém todos os componentes e módulos do aplicativo.
+- **src/assets**: Arquivos estáticos como imagens, ícones, etc.
+- **src/environments**: Contém as configurações de ambiente (desenvolvimento e produção).
+- **angular.json**: Arquivo de configuração do Angular.
+- **package.json**: Arquivo que define as dependências do projeto e scripts para execução.
 
-```bash
-ng generate component component-name
-```
+## Contribuindo
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Se você deseja contribuir com o projeto, siga estas etapas:
 
-```bash
-ng generate --help
-```
+1. Faça um fork do repositório.
+2. Crie uma branch com sua feature (`git checkout -b feature/nova-feature`).
+3. Faça commit das suas alterações (`git commit -am 'Adicionando nova feature'`).
+4. Faça push para a branch (`git push origin feature/nova-feature`).
+5. Abra um pull request.
 
-## Building
+## Licença
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
