@@ -2,10 +2,48 @@
 # Projeto: usuariosWeb
 
 Este é um projeto desenvolvido em Angular para a criação e gerenciamento de usuários na web.
-
-## Descrição
-
 O **usuariosWeb** é uma aplicação web construída com Angular, que permite o gerenciamento de usuários. O sistema possibilita o cadastro, edição e remoção de usuários, entre outras funcionalidades que serão descritas abaixo.
+
+### Organização dos Pacotes
+
+```
+src/
+└── app/                                    # Diretório principal da aplicação Angular
+    ├── app.ts                              # Módulo principal da aplicação
+    ├── app.config.ts                       # Arquivo de configuração da aplicação
+    ├── app.routes.ts                       # Rotas principais da aplicação
+    ├── app.html                            # Template principal (geral)
+    ├── app.css                             # Estilo global da aplicação
+    ├── modules/                            # Agrupamento de módulos por contexto
+    │   ├── admin/                          # Módulo de funcionalidades administrativas
+    │   │   └── painel-principal/           # Tela inicial do painel administrativo
+    │   │       ├── painel-principal.ts     # Lógica do componente
+    │   │       ├── painel-principal.html   # Template HTML
+    │   │       ├── painel-principal.css    # Estilos específicos
+    │   │       └── painel-principal.spec.ts# Testes automatizados
+    │   └── login/                          # Módulo responsável pela autenticação
+    │       ├── autenticar-usuario/         # Tela de login
+    │       │   ├── autenticar-usuario.ts   # Lógica de autenticação
+    │       │   ├── autenticar-usuario.html # Template HTML
+    │       │   ├── autenticar-usuario.css  # Estilos
+    │       │   └── autenticar-usuario.spec.ts # Testes
+    │       └── criar-usuario/              # Tela de criação de conta
+    │           ├── criar-usuario.ts        # Lógica de criação
+    │           ├── criar-usuario.html      # Template HTML
+    │           ├── criar-usuario.css       # Estilos
+    │           └── criar-usuario.spec.ts   # Testes
+
+```
+
+
+## Estrutura do Projeto
+
+- **src/app**: Contém todos os componentes e módulos do aplicativo.
+- **src/assets**: Arquivos estáticos como imagens, ícones, etc.
+- **src/environments**: Contém as configurações de ambiente (desenvolvimento e produção).
+- **angular.json**: Arquivo de configuração do Angular.
+- **package.json**: Arquivo que define as dependências do projeto e scripts para execução.
+
 
 ## Tecnologias Utilizadas
 
@@ -32,34 +70,11 @@ No diretório do projeto, execute o comando abaixo para instalar as dependência
 npm install
 ```
 
-### 3. Execute a aplicação
+## Contato
 
-Depois de instalar as dependências, inicie a aplicação com o seguinte comando:
+Para dúvidas ou sugestões, entre em contato:  
+- kkaioribeiro@gmail.com
+- https://www.linkedin.com/in/kaiomuniz/
 
-```bash
-ng serve
-```
+---
 
-Agora, você pode acessar a aplicação no navegador em `http://localhost:4200`.
-
-## Estrutura do Projeto
-
-- **src/app**: Contém todos os componentes e módulos do aplicativo.
-- **src/assets**: Arquivos estáticos como imagens, ícones, etc.
-- **src/environments**: Contém as configurações de ambiente (desenvolvimento e produção).
-- **angular.json**: Arquivo de configuração do Angular.
-- **package.json**: Arquivo que define as dependências do projeto e scripts para execução.
-
-## Contribuindo
-
-Se você deseja contribuir com o projeto, siga estas etapas:
-
-1. Faça um fork do repositório.
-2. Crie uma branch com sua feature (`git checkout -b feature/nova-feature`).
-3. Faça commit das suas alterações (`git commit -am 'Adicionando nova feature'`).
-4. Faça push para a branch (`git push origin feature/nova-feature`).
-5. Abra um pull request.
-
-## Licença
-
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
