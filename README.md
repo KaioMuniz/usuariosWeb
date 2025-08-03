@@ -4,6 +4,11 @@
 Este é um projeto desenvolvido em Angular para a criação e gerenciamento de usuários na web.
 O **usuariosWeb** é uma aplicação web construída com Angular, que permite o gerenciamento de usuários. O sistema possibilita o cadastro, edição e remoção de usuários, entre outras funcionalidades que serão descritas abaixo.
 
+<a href="https://youtu.be/a5LQhYKkElM">
+<img src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExZXZwZXVjamgwcjhiYXBwYTQwOHpoZXBxNWM1YXpneGMzbzFuY203eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jJJX0YkH5XtcfddEQa/giphy.gif" alt="Assista ao vídeo" width="360">
+      </a>
+
+
 ### Organização dos Pacotes
 
 ```
